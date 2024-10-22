@@ -26,10 +26,9 @@
 
       const apiKey = 'apk.eed87a8e58ec8d6cf9e68213f1d8272ce1531c27ee4300ce0291cfd4f5e94915';  // Replace with your actual API key
       const url = `https://api-connect.eos.com/field-imagery/${fieldId}/${taskId}`;
-      const proxyUrl = 'https://api.allorigins.win/raw?url=';
 
       try {
-        const response = await fetch(proxyUrl+url, {
+        const response = await fetch(url, {
           method: 'GET',
           headers: {
             'x-api-key': apiKey
